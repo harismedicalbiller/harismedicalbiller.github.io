@@ -27,4 +27,134 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sti
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 4rem 10%;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contact-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Individual Brand Colors */
+    .linkedin-btn { background: #0077B5; }
+    .upwork-btn { background: #6fda44; }
+    .whatsapp-btn { background: #25D366; }
+    .fiverr-btn img {
+      width: 28px;
+      height: 28px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <header>
+    <a href="#" class="logo">Muhammad Haris</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m Muhammad Haris, a results-driven Medical Billing Expert with hands-on experience in U.S. healthcare revenue cycle management (RCM). I specialize in complete RCM, including insurance claim processing, denial management, and accounts receivable (AR) recovery. With experience across multiple specialties and billing platforms, I ensure accurate, efficient, and compliant billing workflows that improve cash flow and reduce delays.</p>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Let's Work Together</h2>
+    <p>I'm available for freelance, part-time, or full-time remote medical billing roles. Check out my profiles below:</p>
+
+    <div class="contact-links">
+      <!-- Fiverr (image icon because not in FontAwesome) -->
+      <a href="https://www.fiverr.com/s/rEDPpLD" class="contact-btn fiverr-btn" style="background: #1DBF73;" target="_blank" title="Fiverr">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Fiverr_Logo_2023.svg" alt="Fiverr" />
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/muhammad-haris19" class="contact-btn linkedin-btn" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- Upwork -->
+      <a href="https://www.upwork.com/freelancers/~0173b68c2f6a3511ec?mp_source=share" class="contact-btn upwork-btn" target="_blank" title="Upwork">
+        <i class="fab fa-upwork"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/923159941945" class="contact-btn whatsapp-btn" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Muhammad Haris. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
